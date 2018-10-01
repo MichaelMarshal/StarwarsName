@@ -104,4 +104,5 @@
         } catch (SMSServiceException $e) {
             error_log("Passed Exception-not working " . $e);  // If there is an exception this will not down the exception 
                                                               //in error log which may be useful for reference.
+            $sender->sendMessage('oops something went wrong in the server end please inform them. May the force be with you', $address);
         }
