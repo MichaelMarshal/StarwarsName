@@ -39,7 +39,7 @@
                                                           //I have used explode function to get the second word which 
                                                            //comes after a space
 
-            $random = mt_rand(1, 87); // We require a random value to be passed along with the url as to get random names
+            $random = mt_rand(1, 86); // We require a random value to be passed along with the url as to get random names
 
             $json = file_get_contents("https://swapi.co/api/people/$random");// through this line we access the API url and
                                                                                //get the relevant data
